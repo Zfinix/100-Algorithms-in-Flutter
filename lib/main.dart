@@ -1,5 +1,7 @@
 import 'package:algos_100/algo1.dart';
 import 'package:algos_100/algo2.dart';
+import 'package:algos_100/algo3.dart';
+import 'package:algos_100/algo4.dart';
 import 'package:algos_100/util/margin_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -20,15 +22,11 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,13 +39,16 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             AbsoluteValuesSumMinization.init,
             MarginUtils.mg,
-            Sum.init
-            
+            Sum.init,
+            MarginUtils.mg,
+            AddBorder.init,
+            MarginUtils.mg,
+            AddTwoDigits.init
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: () {},
         tooltip: 'Increment',
         child: Icon(Icons.share),
       ), // This trailing comma makes auto-formatting nicer for build methods.
