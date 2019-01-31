@@ -2,6 +2,7 @@ import 'package:algos_100/algo1.dart';
 import 'package:algos_100/algo2.dart';
 import 'package:algos_100/algo3.dart';
 import 'package:algos_100/algo4.dart';
+import 'package:algos_100/algo5.dart';
 import 'package:algos_100/util/margin_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
             MarginUtils.mg,
             AddBorder.init,
             MarginUtils.mg,
-            AddTwoDigits.init
+            AddTwoDigits.init,
+            MarginUtils.mg,
+            AdjacentElementsProduct.init
           ],
         ),
       ),
