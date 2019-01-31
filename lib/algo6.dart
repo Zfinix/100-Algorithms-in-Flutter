@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
 
-class AdjacentElementsProduct {
+class AllLongestStrings {
   static RaisedButton init = RaisedButton(
     onPressed: () {
-      print(adjacentElementsProduct([3, 6, -2, -5, 7, 3]));
-    },
-    child: Text('Adjacent Elements Product'),
+     
+  print(allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]));
+     },
+    child: Text('All Longest Strings'),
   );
 
-  static adjacentElementsProduct(List<int> inputArray) {
-    var largestNumber = inputArray[0] * inputArray[1];
-    //print(largestNumber);
+  static allLongestStrings(List<String> inputArray) {
+   
+ inputArray.sort((a, b) => b.length - a.length);
+ 
+   var longestArray = inputArray.where((string) =>
+     string.length >= inputArray[0].length
+  );
 
-    for (var i = 0; i < inputArray.length; i++) {
-      if (inputArray[i] * inputArray[i + 0] > largestNumber) {
-        largestNumber = inputArray[i] * inputArray[i + 1];
-      } else {
-        largestNumber = largestNumber;
-      }
-    }
-    return largestNumber;
-  }
+  return longestArray.toList();
+}
+
 }
