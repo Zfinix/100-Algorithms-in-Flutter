@@ -6,6 +6,7 @@ import 'package:algos_100/algo5.dart';
 import 'package:algos_100/algo6.dart';
 import 'package:algos_100/algo7.dart';
 import 'package:algos_100/algo8.dart';
+import 'package:algos_100/algo9.dart';
 import 'package:algos_100/util/margin_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -59,7 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   MarginUtils.mg,
                   AlmostIncreasingSequence.init,
                   MarginUtils.mg,
-                  AlphabeticShift.init
+                  AlphabeticShift.init,
+                  MarginUtils.mg,
+                  AlphabetSubsequence.init
                 ],
               ),
             ),

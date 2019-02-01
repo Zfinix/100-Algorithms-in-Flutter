@@ -13,8 +13,7 @@ class AlphabeticShift {
   static dynamic alphabeticShift(inputString) {
     var string = inputString.split('').map((char) {
       var n = alphabet.indexOf(char);
-      print(n);
-
+    
       return n <= 24
           ? alphabet[n + 1]
           : 'a';
