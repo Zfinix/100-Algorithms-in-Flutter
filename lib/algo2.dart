@@ -9,7 +9,7 @@ class Sum {
       print(add2([1, 2, 3, 4, 5]));
       print(add2([2, 3]));
     },
-    //print(cal([1]));
+    
     child: Text('Sum'),
   );
 

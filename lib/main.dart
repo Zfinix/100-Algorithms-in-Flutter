@@ -1,5 +1,6 @@
 import 'package:algos_100/algo1.dart';
 import 'package:algos_100/algo10.dart';
+import 'package:algos_100/algo11.dart';
 import 'package:algos_100/algo2.dart';
 import 'package:algos_100/algo3.dart';
 import 'package:algos_100/algo4.dart';
@@ -65,7 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   MarginUtils.mg,
                   AlphabetSubsequence.init,
                   MarginUtils.mg,
-                  AlternatingSums.init
+                  AlternatingSums.init,
+                  MarginUtils.mg,
+                  AreEquallyStrong.init
                 ],
               ),
             ),

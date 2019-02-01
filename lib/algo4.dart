@@ -5,7 +5,7 @@ class AddTwoDigits {
     onPressed: () {
      print(addTwoDigits(25));
     },
-    //print(cal([1]));
+    
     child: Text('Add Two Digits'),
   );
 
