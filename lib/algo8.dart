@@ -15,7 +15,7 @@ class AlphabeticShift {
       var n = alphabet.indexOf(char);
       print(n);
 
-      return (alphabet[n + 1].length <= alphabet.length)
+      return n <= 24
           ? alphabet[n + 1]
           : 'a';
     }).join('');
