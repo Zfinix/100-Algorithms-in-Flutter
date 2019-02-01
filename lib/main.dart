@@ -4,6 +4,7 @@ import 'package:algos_100/algo3.dart';
 import 'package:algos_100/algo4.dart';
 import 'package:algos_100/algo5.dart';
 import 'package:algos_100/algo6.dart';
+import 'package:algos_100/algo7.dart';
 import 'package:algos_100/util/margin_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -36,20 +37,26 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("100 ALGOS"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: <Widget>[
-            AbsoluteValuesSumMinization.init,
-            MarginUtils.mg,
-            Sum.init,
-            MarginUtils.mg,
-            AddBorder.init,
-            MarginUtils.mg,
-            AddTwoDigits.init,
-            MarginUtils.mg,
-            AdjacentElementsProduct.init,
-            MarginUtils.mg,
-            AllLongestStrings.init
+            Column(
+              children: <Widget>[
+                AbsoluteValuesSumMinization.init,
+                MarginUtils.mg,
+                Sum.init,
+                MarginUtils.mg,
+                AddBorder.init,
+                MarginUtils.mg,
+                AddTwoDigits.init,
+                MarginUtils.mg,
+                AdjacentElementsProduct.init,
+                MarginUtils.mg,
+                AllLongestStrings.init,
+                MarginUtils.mg,
+                AlmostIncreasingSequence.init
+
+              ],
+            ),
           ],
         ),
       ),
